@@ -22,10 +22,10 @@ pod install
 
 ## use frameworks!
 
-Alamofire
-SwiftyJSON
-Kingfisher
-IQKeyboardManagerSwift
-Toast-Swift
-ChameleonFramework
+- Alamofire
+- SwiftyJSON
+- Kingfisher
+- IQKeyboardManagerSwift
+- Toast-Swift
+- ChameleonFramework
 ##### 앱 아이콘 사진 출처 https://www.brandi.co.kr/
