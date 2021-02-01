@@ -78,6 +78,7 @@ extension ViewController: UICollectionViewDelegate{
         if segue.identifier == "resultToItems"{
             let selectedIndexPath = sender as? NSIndexPath
             let imageVC = segue.destination as! ImageViewController
+            
             imageVC.textData = photos[selectedIndexPath!.item].datetime + ", " + photos[selectedIndexPath!.item].displaySiteName
             
             guard let url = URL(string: photos[selectedIndexPath!.item].imageURL) else { return }
@@ -98,6 +99,7 @@ extension ViewController: UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCollectionViewCell", for: indexPath) as! CustomCollectionViewCell
+        
         
         if let url = URL(string: photos[indexPath.item].thumbnailURL){
             cell.ImageView.kf.setImage(with: url) //Kingfisher

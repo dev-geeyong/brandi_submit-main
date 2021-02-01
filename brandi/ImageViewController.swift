@@ -22,6 +22,11 @@ class ImageViewController: UIViewController {
     override func viewDidLoad() {
  
         super.viewDidLoad()
+        if imageView == nil{ //입력받은 주소의 값의 원본 이미지가 깨진 경우처리
+            let image: UIImage = UIImage(systemName: "questionmark.diamond")!
+            imageView = UIImageView(image: image)
+
+        }
         setupScrollView()
         setZoomScale(for: scrollView.bounds.size)
         scrollView.zoomScale = scrollView.minimumZoomScale //사진이 처음에 보일 때 줌을 초기화(최소)
