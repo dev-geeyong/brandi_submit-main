@@ -1,4 +1,4 @@
-# 카카오 '이미지 검색' api 사용 이미지 검색 앱 구현
+# 카카오 '이미지 검색' api 사용 이미지 검색 앱
 
 https://developers.kakao.com/
 
@@ -20,4 +20,12 @@ pod install
 프로젝트는 하얀색 아이콘인 **brandi.xcworkspace** 파일을 열어서 실행합니다.
 
 
+## use frameworks!
+
+Alamofire
+SwiftyJSON
+Kingfisher
+IQKeyboardManagerSwift
+Toast-Swift
+ChameleonFramework
 ##### 앱 아이콘 사진 출처 https://www.brandi.co.kr/
